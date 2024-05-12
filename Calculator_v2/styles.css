@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #add8e6, #ffb6c1);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  font-size: 29px;
+  padding: 2px 2px;
+  height: 100px;
+  width: 100px;
+  margin: 6px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#one {
+  background-color: #99d69b;
+  color: #ffffff;
+}
+#zeroPointfive {
+  background-color: #ece4ad;
+  color: #ffffff;
+}
+
+#two {
+  background-color: #f7b7a3;
+  color: #ffffff;
+}
+#equals {
+  background-color: #c55938;
+  color: #ffffff;
+}
+
+#nums {
+  background-color: cadetblue;
+}
+#blank {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.obrub {
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+  border-style: outset;
+  border-width: 5px;
+}

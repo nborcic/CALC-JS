@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc_v2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="obrub">
+      <div>
+        <div class="flex flex-direction: column;">
+          <div class="flex justify-content: center; align-items: center;">
+            <div>
+              <input
+                type="text"
+                id="result"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  text-align: center;
+                  height: 80px;
+                  width: auto;
+                  font-size: 30px;
+                  padding: 10px;
+                  margin: 10px auto;
+                  border-radius: 10px;
+                  box-shadow: 0px 0px 15px red;
+                  background-color: #f0f0f0;
+                  color: black;
+                  font-weight: bold;
+                  font-family: 'Courier
+                  New', Courier,
+                    monospace;
+                "
+                placeholder="count on me"
+                disabled
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <button id="zeroPointfive" onclick="clearResult()">C</button>
+              <button id="one" onclick="or()">()</button>
+              <button id="one" onclick="appendValue('%')">%</button>
+              <button id="two" onclick="appendValue('/')">/</button>
+            </div>
+            <div>
+              <button id="nums" onclick="appendValue('7')">7</button>
+              <button id="nums" onclick="appendValue('8')">8</button>
+              <button id="nums" onclick="appendValue('9')">9</button>
+              <button id="two" onclick="appendValue('*')">x</button>
+            </div>
+            <div>
+              <button id="nums" onclick="appendValue('4')">4</button>
+              <button id="nums" onclick="appendValue('5')">5</button>
+              <button id="nums" onclick="appendValue('6')">6</button>
+              <button id="two" onclick="appendValue('-')">-</button>
+            </div>
+            <div>
+              <button id="nums" onclick="appendValue('1')">1</button>
+              <button id="nums" onclick="appendValue('2')">2</button>
+              <button id="nums" onclick="appendValue('3')">3</button>
+              <button id="two" onclick="appendValue('+')">+</button>
+            </div>
+            <div>
+              <button
+                id="blank"
+                onclick="appendValue('')"
+                disabled
+                style="cursor: not-allowed"
+              >
+                //
+              </button>
+              <button id="nums" onclick="appendValue('0')">0</button>
+              <button onclick="orwithdot()">.</button>
+              <button id="equals" onclick="calculate()">=</button>
+            </div>
+          </div>
+          <script src="script.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
